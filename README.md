@@ -1,7 +1,7 @@
 # College-Connect
 In this project  my team developed a College Connect Web application using html,css,javascript,Materialize,flask framework ,sqlite,python,telegram bot,IBM watson conversation 
 
-##Coming Soon
+### Coming Soon
 
 ### Dependencies
 
