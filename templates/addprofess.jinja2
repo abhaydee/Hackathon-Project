@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang=en>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Add Rooms</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="{{url_for('static',filename='style/main2.css')}}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{url_for('static',filename='style/animate.css')}}" rel="stylesheet">
+
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<style>
+
+.myselect{
+
+  font-weight: bold;
+  color: black;
+}
+
+</style>
+</head>
+
+<body background="{{url_for('static',filename='addemp.jpg')}}">
+
+    <div>
+            <h1 class="black-text">Enter the Professional details</h1>
+          <form action ="/rooms/addrooms/" method="post">
+               {% if error is defined %}
+          <div>
+              <h1>{{ error }}</h1>
+          </div>
+          {% else %}
+        {% if msg is not defined %}
+              <div class ="col-3 container white-text">
+                College ID <input type = "text" name ="empid"  /><br>
+                College-Name <input type = "text" name ="empname" /><br>
+                Age<input type = "text" name ="empage" /><br>
+                Branch<input type = "text" name ="empdes" /><br>
+                Email<input type = "text" name ="empphone" /><br>
+                Contact-address<input type = "text" name ="empaddress" />
+              </div>
+              <div class ="col-4">
+                  <input type ="submit" value ="Enter" class="btn btn-large waves-effect waves-light black"/>
+              </div>
+              {% else %}
+              <div class ="col-3 container white-text">
+                College ID <input type = "text" name ="empid"  /><br>
+                College-Name <input type = "text" name ="empname" /><br>
+                Age<input type = "text" name ="empage" /><br>
+                Branch<input type = "text" name ="empdes" /><br>
+                Email<input type = "text" name ="empphone" /><br>
+                Contact-no<input type = "text" name ="empaddress" />
+              </div>
+              <div class ="col-4">
+                  <input type ="submit" value ="Enter" class="btn btn-large waves-effect waves-light black"/>
+              </div>
+               <div>{{ msg }}</div>
+      {% endif %}
+      {% endif %}
+
+            </form>
+            </div>
+
+
+</body>
+
+
+
+</html>

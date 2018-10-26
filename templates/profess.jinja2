@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Rooms</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!--<link href="{{url_for('static',filename='style/main.css')}}" rel="stylesheet" type="text/css" media="screen" />-->
+  <link href="{{url_for('static',filename='style/animate.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <style>
+    .carousel {
+      height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section1">
+    <div class="carousel carousel-slider" data-indicators="true">
+      <a href="#one" class="carousel-item">
+        <img src="https://images.pexels.com/photos/1080865/pexels-photo-1080865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="image">
+      </a>
+      <a href="#two" class="carousel-item">
+        <img src="https://images.pexels.com/photos/652355/pexels-photo-652355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="image">
+      </a>
+      <a href="#three" class="carousel-item">
+        <img src="https://images.pexels.com/photos/12628/pexels-photo-12628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg" alt="">
+      </a>
+      <a href="#four" class="carousel-item">
+        <img src="https://images.pexels.com/photos/1103484/pexels-photo-1103484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg"
+          alt="">
+      </a>
+      <a href="#five" class="carousel-item">
+        <img src="https://www.pexels.com/photo/men-s-wearing-black-suit-jacket-and-pants-937481/.jpg"
+          alt="">
+      </a>
+
+    </div>
+
+  </section>
+  <section class="section1 deep-purple lighten-3  center section-icons black-text">
+    <div class="row">
+      <h1 clas="black">You gotta fill a form</h1>
+      <div class="col s12 m6">
+
+        <div class="card-panel grey darken-3">
+          <i class="material-icons large teal-text">flash_on</i>
+          <p class="white-text">FILL</p>
+          <a href="/rooms/addrooms/" class="btn btn-medium waves-effect waves-light">
+            <button class="btn btn-medium waves-effect waves-light">Fill</button>
+          </a>
+        </div>
+
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey darken-3">
+          <i class="material-icons large teal-text">laptop</i>
+          <p class="white-text">List</p>
+          <a href="/rooms/lstroom/" class="btn btn-medium waves-effect waves-light">
+            <button class="btn btn-medium waves-effect waves-light">List</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel-slider').carousel({
+        indicators:true
+      });
+
+    $(document).ready(function () {
+
+        setInterval(function(){
+            $('.carousel').carousel('next')
+        } ,3000)
+    });
+
+
+    });
+  </script>
+
+</body>
+
+</html>
